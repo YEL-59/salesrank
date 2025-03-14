@@ -1,3 +1,4 @@
+import Delivery from "@/components/main/Home/delivery";
 import Hero from "@/components/main/Home/hero";
 import React from "react";
 
@@ -6,6 +7,7 @@ const Home = () => {
     <>
       <div>
         <Hero />
+        <Delivery />
       </div>
     </>
   );
