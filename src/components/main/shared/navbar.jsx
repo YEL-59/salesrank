@@ -3,6 +3,7 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
 import { Link } from "react-router"; // Fixed incorrect import
 import logo from "../../../assets/logo.png";
+import faqbg from "../../../assets/faqbg.png";
 
 const Navbar = () => {
   const list = [
@@ -14,7 +15,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="w-full py-4  ">
+    <nav className="w-full py-4  " style={{ backgroundImage: `url(${faqbg})` }}>
       <div className="container mx-auto flex items-center justify-between px-4">
         <div className="flex justify-between items-center gap-20">
           <div>
