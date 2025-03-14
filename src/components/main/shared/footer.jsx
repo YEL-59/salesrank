@@ -14,7 +14,7 @@ import {
 const Footer = () => {
   return (
     <footer
-      className="w-full h-auto bg-cover bg-center text-white py-16 relative"
+      className="w-full h-auto bg-cover bg-center text-white py-16 relative bottom-0"
       style={{ backgroundImage: `url(${footerbg})` }}
     >
       <div className="container mx-auto px-6">
