@@ -58,7 +58,7 @@ const Rank = () => {
             </p>
             <Button
               variant="outline"
-              className="rounded-full px-10 py-10 mt-6 lg:mt-4 text-lg"
+              className="rounded-full px-10 py-5 text-primary mt-6 lg:mt-4 text-md"
             >
               See more
             </Button>
