@@ -8,10 +8,10 @@ import faqbg from "../../.././../assets/faqbg.png";
 const Hero = () => {
   return (
     <div style={{ backgroundImage: `url(${faqbg})` }}>
-      <div className="container mx-auto px-6 py-10">
+      <div className="container mx-auto py-5">
         <div className="flex flex-col lg:flex-row gap-10 lg:gap-20 items-center">
-          <div className="text-center lg:text-left max-w-5xl">
-            <h1 className="text-primary text-3xl sm:text-4xl md:text-5xl lg:text-[72px] font-semibold leading-tight md:leading-[110%] uppercase">
+          <div className="text-center flex-1 lg:text-left max-w-5xl">
+            <h1 className="text-primary text-3xl sm:text-4xl md:text-2xl lg:text-[42px] xl:text-[55px] font-semibold leading-tight md:leading-[110%] uppercase">
               The World's First Global Ranking Platform for Elite Sales
               Consultants
             </h1>
@@ -46,7 +46,7 @@ const Hero = () => {
             </div>
           </div>
 
-          <div className="w-full max-w-4xl mx-auto lg:mx-0">
+          <div className="w-full flex-1 max-w-4xl mx-auto lg:mx-0">
             <img
               src={heroimg}
               alt="Hero Image"
