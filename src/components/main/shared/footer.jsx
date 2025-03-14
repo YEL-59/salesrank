@@ -14,12 +14,12 @@ import {
 const Footer = () => {
   return (
     <footer
-      className="w-full bg-cover bg-center text-white py-16 relative"
+      className="w-full h-auto bg-cover bg-center text-white py-16 relative"
       style={{ backgroundImage: `url(${footerbg})` }}
     >
       <div className="container mx-auto px-6">
         {/* Call to Action Section */}
-        <div className="bg-primary p-10 rounded-3xl text-center">
+        <div className="bg-primary p-20 rounded-3xl text-center">
           <h1 className="text-white text-[38px] font-semibold leading-[130%]">
             Ready to Hire Smarter?
           </h1>
@@ -86,9 +86,9 @@ const Footer = () => {
             </div>
 
             <div>
-              <p className="text-[18px] font-medium text-primary">Resources</p>
+              <p className="text-[18px] font-medium text-primary">Licence</p>
               <ul className="mt-4 space-y-3">
-                {["Service", "FAQs", "How it works", "Blog"].map(
+                {["Privacy Policy", "Copyright", "Email Address"].map(
                   (name, index) => (
                     <li key={index}>
                       <a
@@ -130,10 +130,12 @@ const Footer = () => {
             </div>
           </div>
         </div>
+        <div className="mt-5">
+          <div className="border-t mx-auto"></div>
 
-        {/* Footer Bottom */}
-        <div className="mt-16 border-t border-white/20 pt-6 text-center text-primary-foreground hover:text-primary text-[15px]">
-          © {new Date().getFullYear()} SalesRank.AI. All Rights Reserved.
+          <div className="mt-5 text-center text-primary-foreground hover:text-primary text-[15px]">
+            © {new Date().getFullYear()} SalesRank.AI. All Rights Reserved.
+          </div>
         </div>
       </div>
     </footer>
