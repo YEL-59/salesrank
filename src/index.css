@@ -66,3 +66,6 @@
     @apply bg-cover bg-center bg-no-repeat text-foreground;
   }
 }
+html {
+  scroll-behavior: smooth;
+}
