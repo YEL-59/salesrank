@@ -1,6 +1,6 @@
 import faqbg from "../../.././../assets/faqbg.png";
 import img1 from "../../../../assets/conselting1.png";
-import img2 from "../../../../assets/consulting1.png";
+import img2 from "../../../../assets/consultingbg.png";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 const Hero = () => {

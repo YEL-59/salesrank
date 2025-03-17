@@ -51,7 +51,7 @@ const Faq = () => {
                 </div>
               </AccordionItem>
               <AccordionItem
-                value="item-1"
+                value="item-2"
                 className="flex  items-center gap-10"
               >
                 <div className="text-[32px] text-[#8B7D4C] font-normal leading-normal tracking-[-0.32px]">
@@ -73,7 +73,7 @@ const Faq = () => {
                 </div>
               </AccordionItem>
               <AccordionItem
-                value="item-1"
+                value="item-3"
                 className="flex  items-center gap-10"
               >
                 <div className="text-[32px] text-[#8B7D4C] font-normal leading-normal tracking-[-0.32px]">
