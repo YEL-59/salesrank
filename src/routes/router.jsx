@@ -1,4 +1,10 @@
 import Mainlayout from "@/layout/MainLayout";
+import CheckMail from "@/pages/auth/check-mail";
+import ForgetPassword from "@/pages/auth/forget-password";
+import Join from "@/pages/auth/join";
+import ResetPassword from "@/pages/auth/reset-password";
+import Signin from "@/pages/auth/signin";
+import Signup from "@/pages/auth/signup";
 import About from "@/pages/main/about";
 import Aicoach from "@/pages/main/aicoach";
 import Consulting from "@/pages/main/consulting";
@@ -29,5 +35,30 @@ export const router = createBrowserRouter([
         element: <Consulting />,
       },
     ],
+  },
+
+  {
+    path: "sign-in",
+    element: <Signin />,
+  },
+  {
+    path: "sign-up",
+    element: <Signup />,
+  },
+  {
+    path: "forget-password",
+    element: <ForgetPassword />,
+  },
+  {
+    path: "check-mail",
+    element: <CheckMail />,
+  },
+  {
+    path: "join",
+    element: <Join />,
+  },
+  {
+    path: "reset-password",
+    element: <ResetPassword />,
   },
 ]);
