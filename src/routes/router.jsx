@@ -1,3 +1,4 @@
+import DashboardLayout from "@/layout/dashboard-layout";
 import Mainlayout from "@/layout/MainLayout";
 import CheckMail from "@/pages/auth/check-mail";
 import ForgetPassword from "@/pages/auth/forget-password";
@@ -5,6 +6,7 @@ import Join from "@/pages/auth/join";
 import ResetPassword from "@/pages/auth/reset-password";
 import Signin from "@/pages/auth/signin";
 import Signup from "@/pages/auth/signup";
+import Candidate from "@/pages/dashboard/candidate";
 import About from "@/pages/main/about";
 import Aicoach from "@/pages/main/aicoach";
 import Consulting from "@/pages/main/consulting";
@@ -34,6 +36,17 @@ export const router = createBrowserRouter([
         path: "consulting",
         element: <Consulting />,
       },
+    ],
+  },
+  {
+    path: "/dashboard",
+    element: <DashboardLayout />,
+    children: [
+      { index: true, element: <Candidate /> },
+      // {
+      //   path: "about",
+      //   element: <About />,
+      // },
     ],
   },
 
