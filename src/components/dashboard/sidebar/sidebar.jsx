@@ -18,7 +18,15 @@ import { Button } from "@/components/ui/button";
 
 import { cn } from "@/lib/utils";
 import { useEffect } from "react";
-import { Link, useLocation, useNavigate } from "react-router";
+import { Link, useLocation } from "react-router";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 
 // Menu items.
 const items = [
@@ -51,14 +59,8 @@ const items = [
 
 export function Sidebar() {
   const { pathname } = useLocation();
-  const navigate = useNavigate();
 
   const { setOpenMobile } = useSidebar();
-
-  const handleLogout = () => {
-    // logout();
-    navigate("/auth/sign-in");
-  };
 
   useEffect(() => {
     setOpenMobile(false);
@@ -95,15 +97,32 @@ export function Sidebar() {
           </SidebarGroupContent>
         </SidebarGroup>
       </SidebarContent>
-      <SidebarFooter className="p-6">
-        <Button
-          variant="secondary"
-          className="h-14 rounded-[20px] p-[18px] border border-[#EFEFF4] text-muted-foreground justify-start gap-[18px]"
-          onClick={handleLogout}
-        >
-          <LogOutIcon className="size-5" />
-          Logout
-        </Button>
+      <SidebarFooter className="p-2 ">
+        <Card className="bg-[#002868]">
+          <CardHeader>
+            <CardTitle>
+              <h1 className="text-white text-xl font-bold">
+                Elevate Your Recruitment Strategy
+              </h1>
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p className="text-sm">
+              Upgrade your recruitment with new features for better efficiency
+              and effectiveness.
+            </p>
+          </CardContent>
+          <CardFooter>
+            {" "}
+            <Button
+              variant="secondary"
+              className="rounded-md p-[18px] w-full bg-[#FCE38A]  border border-[#EFEFF4] text-primary justify-start 
+              "
+            >
+              Upgrade Now
+            </Button>{" "}
+          </CardFooter>
+        </Card>
       </SidebarFooter>
     </CnSidebar>
   );
