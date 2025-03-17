@@ -23,22 +23,27 @@ import { Link, useLocation, useNavigate } from "react-router";
 // Menu items.
 const items = [
   {
-    title: "Dashboard",
+    title: "Candidates ",
     url: "/",
     icon: Home,
   },
   {
-    title: "Service",
+    title: "Inbox",
     url: "/service",
     icon: Inbox,
   },
   {
-    title: "Booking",
+    title: "Calendar",
     url: "/booking",
     icon: Calendar,
   },
   {
-    title: "Profile",
+    title: "Onboarding",
+    url: "/profile",
+    icon: UserIcon,
+  },
+  {
+    title: "Setting",
     url: "/profile",
     icon: UserIcon,
   },
@@ -63,7 +68,7 @@ export function Sidebar() {
     <CnSidebar>
       <SidebarHeader className="px-6 pt-10 pb-[60px]">
         <Link to="/">
-          <img src={logo} alt="Relaxa Logo" className="w-[153px]" />
+          <img src={logo} alt="sharelink Logo" className="w-[153px]" />
         </Link>
       </SidebarHeader>
       <SidebarContent className="px-6">
@@ -75,7 +80,7 @@ export function Sidebar() {
                   <SidebarMenuButton
                     asChild
                     className={cn("h-14 rounded-[20px] p-[18px]", {
-                      "bg-primary hover:bg-primary/95 text-primary-foreground hover:text-primary-foreground":
+                      "bg-primary hover:bg-[#002868] text-primary-foreground hover:text-primary-foreground":
                         item.url === pathname,
                     })}
                   >

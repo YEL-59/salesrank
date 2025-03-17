@@ -28,14 +28,14 @@ export const router = createBrowserRouter([
         path: "pricing",
         element: <Pricing />,
       },
-      {
-        path: "ai-Coach",
-        element: <Aicoach />,
-      },
-      {
-        path: "consulting",
-        element: <Consulting />,
-      },
+      // {
+      //   path: "ai-Coach",
+      //   element: <Aicoach />,
+      // },
+      // {
+      //   path: "consulting",
+      //   element: <Consulting />,
+      // },
     ],
   },
   {

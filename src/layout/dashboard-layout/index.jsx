@@ -1,3 +1,4 @@
+import Footer from "@/components/dashboard/footer";
 import Navbar from "@/components/dashboard/navbar";
 import { Sidebar } from "@/components/dashboard/sidebar/sidebar";
 import { SidebarProvider } from "@/components/ui/sidebar";
@@ -12,6 +13,7 @@ export default function DashboardLayout() {
         <div className="h-[calc(100svh-98px)] overflow-y-auto">
           <Outlet />
         </div>
+        <Footer />
       </main>
     </SidebarProvider>
   );
