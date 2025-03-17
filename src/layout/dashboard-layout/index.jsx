@@ -10,7 +10,7 @@ export default function DashboardLayout() {
       <Sidebar />
       <main className="bg-[#F0F5FF] w-full">
         <Navbar />
-        <div className="h-[calc(100svh-98px)] overflow-y-auto">
+        <div className="h-[calc(100svh-98px)] overflow-y-auto px-5">
           <Outlet />
         </div>
         <Footer />
