@@ -52,7 +52,7 @@ const items = [
   },
   {
     title: "Setting",
-    url: "/profile",
+    url: "setting",
     icon: UserIcon,
   },
 ];
