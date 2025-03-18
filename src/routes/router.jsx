@@ -8,6 +8,7 @@ import ResetPassword from "@/pages/auth/reset-password";
 import Signin from "@/pages/auth/signin";
 import Signup from "@/pages/auth/signup";
 import Candidate from "@/pages/dashboard/candidate";
+import Onboarding from "@/pages/dashboard/onboarding";
 import Setting from "@/pages/dashboard/settings";
 import About from "@/pages/main/about";
 import Aicoach from "@/pages/main/aicoach";
@@ -45,6 +46,10 @@ export const router = createBrowserRouter([
     element: <DashboardLayout />,
     children: [
       { index: true, element: <Candidate /> },
+      {
+        path: "onboarding",
+        element: <Onboarding />,
+      },
       {
         path: "setting",
         element: <SettingsLayout />,

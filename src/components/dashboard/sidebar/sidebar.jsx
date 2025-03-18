@@ -47,7 +47,7 @@ const items = [
   },
   {
     title: "Onboarding",
-    url: "/profile",
+    url: "onboarding",
     icon: UserIcon,
   },
   {
