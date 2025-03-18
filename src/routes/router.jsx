@@ -8,6 +8,8 @@ import ResetPassword from "@/pages/auth/reset-password";
 import Signin from "@/pages/auth/signin";
 import Signup from "@/pages/auth/signup";
 import Candidate from "@/pages/dashboard/candidate";
+import CandidateDetails from "@/pages/dashboard/candidate-details";
+import Inbox from "@/pages/dashboard/inbox/inbox";
 import Onboarding from "@/pages/dashboard/onboarding";
 import Setting from "@/pages/dashboard/settings";
 import About from "@/pages/main/about";
@@ -31,14 +33,14 @@ export const router = createBrowserRouter([
         path: "pricing",
         element: <Pricing />,
       },
-      // {
-      //   path: "ai-Coach",
-      //   element: <Aicoach />,
-      // },
-      // {
-      //   path: "consulting",
-      //   element: <Consulting />,
-      // },
+      {
+        path: "ai-Coach",
+        element: <Aicoach />,
+      },
+      {
+        path: "consulting",
+        element: <Consulting />,
+      },
     ],
   },
   {
@@ -49,6 +51,14 @@ export const router = createBrowserRouter([
       {
         path: "onboarding",
         element: <Onboarding />,
+      },
+      {
+        path: "inbox",
+        element: <Inbox />,
+      },
+      {
+        path: "details",
+        element: <CandidateDetails />,
       },
       {
         path: "setting",
