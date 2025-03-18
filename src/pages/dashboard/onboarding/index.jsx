@@ -38,65 +38,113 @@ const Onboarding = () => {
                 <h1 className="text-xl font-semibold text-gray-800">
                   Onboarding Feedback
                 </h1>
-                <Ellipsis className="cursor-pointer text-gray-500" />
+                <Ellipsis className="cursor-pointer text-gray-500py-2" />
               </div>
-              {[...Array(2)].map((_, index) => (
-                <Card
-                  key={index}
-                  className="shadow-md border border-gray-200 rounded-xl bg-white"
-                >
-                  <CardHeader>
-                    <CardTitle>
-                      <div className="flex gap-3 items-center">
-                        <div className="h-14 w-14 bg-yellow-100 rounded-full flex items-center justify-center">
-                          <span className="text-gray-600 text-lg font-semibold">
-                            OS
-                          </span>
-                        </div>
-                        <div>
-                          <Badge className="bg-gray-200 text-gray-700">
-                            Human Resources
-                          </Badge>
-                          <h1 className="text-lg font-semibold text-primary">
-                            Olivia Smith
-                          </h1>
-                          <p className="text-sm text-gray-500">HR Manager</p>
-                        </div>
+
+              <Card className="shadow-md border border-gray-200 rounded-xl bg-white mb-5">
+                <CardHeader>
+                  <CardTitle>
+                    <div className="flex gap-3 items-center">
+                      <div className="h-14 w-14 bg-yellow-100 rounded-full flex items-center justify-center">
+                        <span className="text-gray-600 text-lg font-semibold">
+                          OS
+                        </span>
                       </div>
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <div className="flex flex-wrap gap-2">
-                      <Badge className="bg-blue-100 text-blue-700">
-                        Mid-level
-                      </Badge>
-                      <Badge className="bg-green-100 text-green-700">
-                        5+ Years
-                      </Badge>
-                      <Badge className="bg-purple-100 text-purple-700">
-                        Full-time
-                      </Badge>
-                      <Badge className="bg-orange-100 text-orange-700">
-                        Remote
-                      </Badge>
+                      <div>
+                        <Badge className="bg-gray-200 text-gray-700">
+                          Human Resources
+                        </Badge>
+                        <h1 className="text-lg font-semibold text-primary">
+                          Olivia Smith
+                        </h1>
+                        <p className="text-sm text-gray-500">HR Manager</p>
+                      </div>
                     </div>
-                  </CardContent>
-                  <CardFooter className="border-t pt-4 flex justify-between text-sm text-gray-700">
-                    <div>
-                      <h4 className="text-gray-500">Start Date</h4>
-                      <h1 className="font-semibold text-primary">
-                        October 20, 2030
-                      </h1>
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="flex flex-wrap gap-2">
+                    <Badge className="bg-blue-100 text-blue-700">
+                      Mid-level
+                    </Badge>
+                    <Badge className="bg-green-100 text-green-700">
+                      5+ Years
+                    </Badge>
+                    <Badge className="bg-purple-100 text-purple-700">
+                      Full-time
+                    </Badge>
+                    <Badge className="bg-orange-100 text-orange-700">
+                      Remote
+                    </Badge>
+                  </div>
+                </CardContent>
+                <CardFooter className="border-t pt-4 flex justify-between text-sm text-gray-700">
+                  <div>
+                    <h4 className="text-gray-500">Start Date</h4>
+                    <h1 className="font-semibold text-primary">
+                      October 20, 2030
+                    </h1>
+                  </div>
+                  <div className="text-right">
+                    <h4 className="text-gray-500">Onboarding Status</h4>
+                    <Badge className="bg-gray-200 text-gray-700">
+                      In Progress
+                    </Badge>
+                  </div>
+                </CardFooter>
+              </Card>
+              <Card className="shadow-md border border-gray-200 rounded-xl bg-white mb-5">
+                <CardHeader>
+                  <CardTitle>
+                    <div className="flex gap-3 items-center">
+                      <div className="h-14 w-14 bg-yellow-100 rounded-full flex items-center justify-center">
+                        <span className="text-gray-600 text-lg font-semibold">
+                          OS
+                        </span>
+                      </div>
+                      <div>
+                        <Badge className="bg-gray-200 text-gray-700">
+                          Human Resources
+                        </Badge>
+                        <h1 className="text-lg font-semibold text-primary">
+                          Olivia Smith
+                        </h1>
+                        <p className="text-sm text-gray-500">HR Manager</p>
+                      </div>
                     </div>
-                    <div className="text-right">
-                      <h4 className="text-gray-500">Onboarding Status</h4>
-                      <Badge className="bg-gray-200 text-gray-700">
-                        In Progress
-                      </Badge>
-                    </div>
-                  </CardFooter>
-                </Card>
-              ))}
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="flex flex-wrap gap-2">
+                    <Badge className="bg-blue-100 text-blue-700">
+                      Mid-level
+                    </Badge>
+                    <Badge className="bg-green-100 text-green-700">
+                      5+ Years
+                    </Badge>
+                    <Badge className="bg-purple-100 text-purple-700">
+                      Full-time
+                    </Badge>
+                    <Badge className="bg-orange-100 text-orange-700">
+                      Remote
+                    </Badge>
+                  </div>
+                </CardContent>
+                <CardFooter className="border-t pt-4 flex justify-between text-sm text-gray-700">
+                  <div>
+                    <h4 className="text-gray-500">Start Date</h4>
+                    <h1 className="font-semibold text-primary">
+                      October 20, 2030
+                    </h1>
+                  </div>
+                  <div className="text-right">
+                    <h4 className="text-gray-500">Onboarding Status</h4>
+                    <Badge className="bg-gray-200 text-gray-700">
+                      In Progress
+                    </Badge>
+                  </div>
+                </CardFooter>
+              </Card>
             </div>
             <div className="bg-white shadow-lg rounded-lg p-6">
               <div className="flex justify-between items-center mb-4">
