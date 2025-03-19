@@ -15,7 +15,7 @@ const Sidebarinbox = () => {
 
   return (
     <div
-      className={`h-[calc(100svh-40px)] bg-white shadow-lg ${
+      className={`h-[calc(100svh-180px)] bg-white shadow-lg mb-10 rounded-md ${
         isOpen ? "w-64" : "w-20"
       } transition-all duration-300`}
     >
