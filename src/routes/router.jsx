@@ -1,4 +1,6 @@
 import DashboardLayout from "@/layout/dashboard-layout";
+import InboxLayout from "@/layout/dashboard-layout/inbox";
+
 import SettingsLayout from "@/layout/dashboard-layout/settings-layout";
 import Mainlayout from "@/layout/MainLayout";
 import CheckMail from "@/pages/auth/check-mail";
@@ -10,6 +12,7 @@ import Signup from "@/pages/auth/signup";
 import Candidate from "@/pages/dashboard/candidate";
 import CandidateDetails from "@/pages/dashboard/candidate-details";
 import Inbox from "@/pages/dashboard/inbox/inbox";
+
 import Onboarding from "@/pages/dashboard/onboarding";
 import Setting from "@/pages/dashboard/settings";
 import About from "@/pages/main/about";
@@ -54,7 +57,8 @@ export const router = createBrowserRouter([
       },
       {
         path: "inbox",
-        element: <Inbox />,
+        element: <InboxLayout />,
+        children: [{ index: true, element: <Inbox /> }],
       },
       {
         path: "details",
@@ -70,10 +74,10 @@ export const router = createBrowserRouter([
           },
         ],
       },
-      // {
-      //   path: "about",
-      //   element: <About />,
-      // },
+      {
+        path: "about",
+        element: <About />,
+      },
     ],
   },
 
