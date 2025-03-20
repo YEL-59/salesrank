@@ -32,7 +32,7 @@ import {
 const items = [
   {
     title: "Candidates ",
-    url: "/",
+    url: "candidate",
     icon: Home,
   },
   {
@@ -42,7 +42,7 @@ const items = [
   },
   {
     title: "Calendar",
-    url: "/booking",
+    url: "booking",
     icon: Calendar,
   },
   {

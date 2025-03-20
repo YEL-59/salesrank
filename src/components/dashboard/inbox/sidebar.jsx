@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router";
-import { Inbox, Home, Calendar, User, LogOut } from "lucide-react";
+import { Inbox, Home, Calendar, User, LogOut, Plus } from "lucide-react";
+import Tag1 from "@/assets/tag1";
+import Tag2 from "@/assets/Tag2";
 
 const Sidebarinbox = () => {
   const { pathname } = useLocation();
@@ -11,6 +13,8 @@ const Sidebarinbox = () => {
     { name: "Starred", icon: <Inbox />, url: "/inbox" },
     { name: "Sent", icon: <Calendar />, url: "/schedule" },
     { name: "Drafts", icon: <User />, url: "/profile" },
+    { name: "Spam", icon: <User />, url: "/profile" },
+    { name: "Trash", icon: <User />, url: "/profile" },
   ];
 
   return (
@@ -30,7 +34,7 @@ const Sidebarinbox = () => {
       </div>
 
       {/* Sidebar Menu */}
-      <nav className="mt-4">
+      <nav className="mt-4 border-b py-2">
         {menuItems.map((item) => (
           <Link
             key={item.name}
@@ -44,6 +48,24 @@ const Sidebarinbox = () => {
           </Link>
         ))}
       </nav>
+
+      <div className="flex justify-between p-3">
+        <p>Label</p>
+        <div>
+          <Plus />
+        </div>
+      </div>
+
+      <div className="flex flex-col p-5 gap-3">
+        <div className="flex gap-2">
+          <Tag1 />
+          Team
+        </div>
+        <div className="flex gap-2">
+          <Tag2 />
+          Candidates
+        </div>
+      </div>
 
       {/* Logout Button */}
       <div className="absolute bottom-4 left-4">
