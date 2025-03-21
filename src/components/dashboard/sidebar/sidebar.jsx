@@ -55,6 +55,16 @@ const items = [
     url: "setting",
     icon: UserIcon,
   },
+  {
+    title: "Setting2",
+    url: "settings2",
+    icon: UserIcon,
+  },
+  {
+    title: "Dashboard",
+    url: "dashboard2",
+    icon: UserIcon,
+  },
 ];
 
 export function Sidebar() {

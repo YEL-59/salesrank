@@ -11,10 +11,12 @@ import Signin from "@/pages/auth/signin";
 import Signup from "@/pages/auth/signup";
 import Candidate from "@/pages/dashboard/candidate";
 import CandidateDetails from "@/pages/dashboard/candidate-details";
+import Dashboard from "@/pages/dashboard/dashboard";
 import Inbox from "@/pages/dashboard/inbox/inbox";
 
 import Onboarding from "@/pages/dashboard/onboarding";
 import Setting from "@/pages/dashboard/settings";
+import Settings2 from "@/pages/dashboard/settings2";
 import About from "@/pages/main/about";
 import Aicoach from "@/pages/main/aicoach";
 import Consulting from "@/pages/main/consulting";
@@ -75,8 +77,22 @@ export const router = createBrowserRouter([
         ],
       },
       {
+        path: "settings2",
+        element: <SettingsLayout />,
+        children: [
+          {
+            index: true,
+            element: <Settings2 />,
+          },
+        ],
+      },
+      {
         path: "about",
         element: <About />,
+      },
+      {
+        path: "dashboard2",
+        element: <Dashboard />,
       },
     ],
   },
