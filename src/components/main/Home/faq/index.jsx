@@ -37,7 +37,12 @@ const Faq = () => {
 
           {/* Right Section (Accordion) */}
           <div className="flex-1 mt-8 lg:mt-0">
-            <Accordion type="single" collapsible className="space-y-4">
+            <Accordion
+              type="single"
+              defaultValue="item-1"
+              collapsible
+              className="space-y-4"
+            >
               <AccordionItem value="item-1">
                 <AccordionTrigger className="font-medium text-lg text-primary py-4 px-6 rounded-lg hover:bg-primary/10 transition">
                   Why is digital marketing important for my business?
